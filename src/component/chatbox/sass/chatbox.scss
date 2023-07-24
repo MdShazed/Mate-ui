@@ -1,0 +1,146 @@
+// Reset some default styles
+html,
+body,
+div,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+// Dark theme colors
+$background-color: #1e1e1e;
+$text-color: #f1f1f1;
+$chatbox-color: #2b2b2b;
+$online-users-color: #363636;
+
+// Dark theme styles
+body {
+  background-color: $background-color;
+  color: $text-color;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 20px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+
+  .online {
+    flex: 1;
+    margin-right: 20px;
+    background-color: $online-users-color;
+    padding: 10px;
+    border-radius: 5px;
+
+    @media (max-width: 612px) {
+      display: none;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .users {
+      ul {
+        padding-left: 30px;
+        list-style-type: disc;
+        li {
+          font-size: 18px;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+
+  .chatbox {
+    flex: 3;
+    background-color: $chatbox-color;
+    padding: 20px;
+    border-radius: 5px;
+    overflow-x: auto;
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .messages {
+      #message {
+        font-size: 16px;
+        margin-bottom: 5px;
+      }
+
+      span {
+        font-size: 14px;
+        color: #e57a7a;
+      }
+    }
+
+    form {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+
+      @media (min-width: 768px) {
+        flex-direction: row;
+      }
+      @media (max-width: 449px) {
+        flex-direction: column;
+      }
+
+      input[type="text"] {
+        flex: 1;
+        padding: 10px;
+        font-size: 16px;
+        background-color: $background-color;
+        color: $text-color;
+        outline: none;
+        border-radius: 5px;
+        font-family: "Ubuntu", sans-serif;
+
+        &::placeholder {
+          color: #9a9a9a;
+        }
+
+        @media (min-width: 768px) {
+          margin-bottom: 0;
+          margin-right: 10px;
+        }
+
+        @media (max-width: 449px) {
+          padding: 5px;
+          margin-bottom: 5px;
+        }
+      }
+
+      button[type="submit"] {
+        margin: 5px;
+        padding: 12px 20px;
+        font-size: 16px;
+        background-color: #555;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        font-family: "Ubuntu", sans-serif;
+
+        &:hover {
+          background-color: #777;
+        }
+
+        @media (min-width: 768px) {
+          width: 100px;
+        }
+      }
+    }
+  }
+}

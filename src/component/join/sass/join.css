@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fasthand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+* {
+  margin: 0px;
+  padding: 0xp;
+  box-sizing: border-box;
+}
+
+.main_join {
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  width: 100%;
+  height: 100vh;
+}
+.main_join form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 5px solid #636363;
+  border-radius: 5px;
+  padding: 50px;
+}
+.main_join form .header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.main_join form .header h1 {
+  font-size: 40px;
+  color: #fff;
+  font-family: "Ubuntu", sans-serif;
+}
+.main_join form .header p {
+  font-family: "Ubuntu", sans-serif;
+}
+.main_join form .spacing {
+  margin-bottom: 10px;
+}
+.main_join form input[type=text] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  width: 250px;
+  border-radius: 5px;
+  font-family: "Ubuntu", sans-serif;
+}
+.main_join form input[type=text]::-moz-placeholder {
+  color: #999;
+}
+.main_join form input[type=text]::placeholder {
+  color: #999;
+}
+.main_join form a {
+  text-decoration: none;
+}
+.main_join form a button[type=submit] {
+  background-color: #555;
+  color: #fff;
+  border: none;
+  padding: 10px 30px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: "Ubuntu", sans-serif;
+}
+.main_join form a button[type=submit]:hover {
+  background-color: #777;
+}/*# sourceMappingURL=join.css.map */
