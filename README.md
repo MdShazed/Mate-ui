@@ -1,2 +1,4 @@
 # Mate-ui
-this is a online chatting react app 
+this is an online chatting React app 
+
+Live-Demo: https://genuine-eclair-9e3edd.netlify.app/
